@@ -60,6 +60,10 @@ INSERT INTO questions (title, body, user_id)
 VALUES ('Question 1', 'This is the body.', 1);
 INSERT INTO questions (title, body, user_id)
 VALUES ('What is the meaning of life?', 'I have no idea, so that''s why I am asking. You tell me.', 2);
+INSERT INTO questions (title, body, user_id)
+VALUES ('Question 2', 'Second', 1);
+INSERT INTO questions (title, body, user_id)
+VALUES ('Question 3', 'Third', 1);
 
 INSERT INTO question_follows (user_id, questions_id)
 VALUES (1, 2);
@@ -74,6 +78,8 @@ INSERT INTO replies (body, questions_id, user_id, reply_id)
 VALUES ('First', 1, 2, 1);
 INSERT INTO replies (body, questions_id, user_id, reply_id)
 VALUES ('No you aren''t!!!', 1, 3, 2);
+INSERT INTO replies (body, questions_id, user_id, reply_id)
+VALUES ('Really, you aren''t.', 1, 3, 3);
 
 INSERT INTO question_likes (user_id, questions_id)
 VALUES (2, 2);
